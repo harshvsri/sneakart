@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-evenly;
+
+  margin: 0;
+  padding: 1rem;
+
+  background-color: #212529;
+}
+
+.navBar li {
+  list-style-type: none;
+}
+
+.navLink {
+  text-decoration: none;
+  color: rgb(255, 255, 255, 0.75);
+}
+
+.navLink:hover {
+  color: white;
+}
+
+.homePage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #f8f9fa;
+  padding: 3rem;
+}
+
+.homePage h1 {
+  font-size: 2.5rem;
+  font-weight: bolder;
+
+  margin: 1rem;
+}
+
+.homePage h3 {
+  margin: 1rem;
+}
+
+.featured {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #f8f9fa;
+  padding: 3rem;
+}
+
+.product-img {
+  height: 200px;
+  width: 200px;
+}
