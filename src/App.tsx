@@ -5,10 +5,9 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Shop from "./components/Shop";
 import About from "./components/About";
-
 import Login from "./components/Login";
 import Footer from "./components/Footer";
-import Checkout from "./components/CheckOut";
+import Cart from "./components/Cart";
 
 function App() {
   interface CartItem {
@@ -39,7 +38,7 @@ function App() {
           element={<Shop handleAddToCart={handleAddToCart} />}
         />
         <Route path="/about" element={<About />} />
-        <Route path="/checkout" element={<Checkout cartItems={cartItems} />} />
+        <Route path="/cart" element={<Cart cartItems={cartItems} />} />
         <Route path="/login" element={<Login />} />
       </Routes>
       <Footer />
