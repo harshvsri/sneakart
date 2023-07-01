@@ -28,8 +28,11 @@ function Cart({ cartItems }: Props) {
                 </span>
               </h4>
               <ul className="list-group mb-3">
-                {cartItems.map((item) => (
-                  <li className="list-group-item d-flex justify-content-between lh-sm">
+                {cartItems.map((item, index) => (
+                  <li
+                    key={index}
+                    className="list-group-item d-flex justify-content-between lh-sm"
+                  >
                     <div>
                       <h6 className="my-0">{item.name}</h6>
                       <small className="text-body-secondary">
