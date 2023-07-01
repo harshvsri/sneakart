@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
+interface Props {
+  handleAddToCart: (item: { name: string; price: number; img: string }) => void;
+}
 
-function Main() {
+function Home({ handleAddToCart }: Props) {
   const featured = [
     {
       name: "Nike Air Jordans",
@@ -79,7 +82,12 @@ function Main() {
                   your game and make a statement on and off the court with Nike
                   Air Jordans.
                 </p>
-                <button className="btn btn-dark">Add to cart</button>
+                <button
+                  onClick={() => handleAddToCart(item)}
+                  className="btn btn-dark"
+                >
+                  Add to cart
+                </button>
               </div>
             </div>
           ))}
@@ -89,14 +97,4 @@ function Main() {
   );
 }
 
-export default Main;
-
-<main>
-  <div className="homePage">
-    <h1></h1>
-    <h3>
-      Explore a wide range of products <br />
-      And start shopping with joy.
-    </h3>
-  </div>
-</main>;
+export default Home;

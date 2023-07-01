@@ -1,4 +1,18 @@
-const Cart = () => {
+interface Props {
+  cartItems: {
+    name: string;
+    price: number;
+    img: string;
+  }[];
+}
+
+function Cart({ cartItems }: Props) {
+  let totalAmount = 0;
+  cartItems.forEach((item) => {
+    totalAmount += item.price;
+  });
+  totalAmount -= 5; //Promo Code
+
   return (
     <>
       <div className="container">
@@ -9,46 +23,33 @@ const Cart = () => {
             <div className="col-md-5 col-lg-4 order-md-last">
               <h4 className="d-flex justify-content-between align-items-center mb-3">
                 <span className="text-dark">Your cart</span>
-                <span className="badge bg-dark rounded-pill">3</span>
+                <span className="badge bg-dark rounded-pill">
+                  {cartItems.length}
+                </span>
               </h4>
               <ul className="list-group mb-3">
-                <li className="list-group-item d-flex justify-content-between lh-sm">
-                  <div>
-                    <h6 className="my-0">Product name</h6>
-                    <small className="text-body-secondary">
-                      Brief description
-                    </small>
-                  </div>
-                  <span className="text-body-secondary">$12</span>
-                </li>
-                <li className="list-group-item d-flex justify-content-between lh-sm">
-                  <div>
-                    <h6 className="my-0">Second product</h6>
-                    <small className="text-body-secondary">
-                      Brief description
-                    </small>
-                  </div>
-                  <span className="text-body-secondary">$8</span>
-                </li>
-                <li className="list-group-item d-flex justify-content-between lh-sm">
-                  <div>
-                    <h6 className="my-0">Third item</h6>
-                    <small className="text-body-secondary">
-                      Brief description
-                    </small>
-                  </div>
-                  <span className="text-body-secondary">$5</span>
-                </li>
+                {cartItems.map((item) => (
+                  <li className="list-group-item d-flex justify-content-between lh-sm">
+                    <div>
+                      <h6 className="my-0">{item.name}</h6>
+                      <small className="text-body-secondary">
+                        Brief description
+                      </small>
+                    </div>
+                    <span className="text-body-secondary">${item.price}</span>
+                  </li>
+                ))}
+
                 <li className="list-group-item d-flex justify-content-between bg-body-tertiary">
                   <div className="text-success">
                     <h6 className="my-0">Promo code</h6>
-                    <small>EXAMPLE CODE</small>
+                    <small>FIRST PURCHASE</small>
                   </div>
                   <span className="text-success">−$5</span>
                 </li>
                 <li className="list-group-item d-flex justify-content-between">
                   <span>Total (USD)</span>
-                  <strong>$20</strong>
+                  <strong>${totalAmount}</strong>
                 </li>
               </ul>
               <form className="card p-2">
@@ -338,6 +339,6 @@ const Cart = () => {
       </div>
     </>
   );
-};
+}
 
 export default Cart;

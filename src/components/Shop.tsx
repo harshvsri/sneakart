@@ -1,4 +1,8 @@
-function Shop() {
+interface Props {
+  handleAddToCart: (item: { name: string; price: number; img: string }) => void;
+}
+
+function Shop({ handleAddToCart }: Props) {
   const products = [
     {
       title: "SPECIAL OFFERS",
@@ -153,7 +157,12 @@ function Shop() {
                     Elevate your game and make a statement on and off the court
                     with Nike Air Jordans.
                   </p>
-                  <button className="btn btn-dark">Add to cart</button>
+                  <button
+                    onClick={() => handleAddToCart(item)}
+                    className="btn btn-dark"
+                  >
+                    Add to cart
+                  </button>
                 </div>
               </div>
             ))}
