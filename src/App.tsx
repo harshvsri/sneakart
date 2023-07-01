@@ -5,9 +5,10 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Shop from "./components/Shop";
 import About from "./components/About";
-import Checkout from "./components/CheckOut";
+
 import Login from "./components/Login";
 import Footer from "./components/Footer";
+import Checkout from "./components/CheckOut";
 
 function App() {
   interface CartItem {

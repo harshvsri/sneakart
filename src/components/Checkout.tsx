@@ -6,7 +6,7 @@ interface Props {
   }[];
 }
 
-function Cart({ cartItems }: Props) {
+function Checkout({ cartItems }: Props) {
   let totalAmount = 0;
   cartItems.forEach((item) => {
     totalAmount += item.price;
@@ -344,4 +344,4 @@ function Cart({ cartItems }: Props) {
   );
 }
 
-export default Cart;
+export default Checkout;

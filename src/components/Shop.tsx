@@ -138,8 +138,8 @@ function Shop({ handleAddToCart }: Props) {
 
   return (
     <>
-      {products.map((section) => (
-        <div className="m-3 text-center">
+      {products.map((section, index) => (
+        <div key={index} className="m-3 text-center">
           <h2>{section.title}</h2>
           <div className="row justify-content-around">
             {section.productList.map((item, index) => (
