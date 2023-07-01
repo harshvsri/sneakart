@@ -8,8 +8,8 @@ const Cart = () => {
 
             <div className="col-md-5 col-lg-4 order-md-last">
               <h4 className="d-flex justify-content-between align-items-center mb-3">
-                <span className="text-primary">Your cart</span>
-                <span className="badge bg-primary rounded-pill">3</span>
+                <span className="text-dark">Your cart</span>
+                <span className="badge bg-dark rounded-pill">3</span>
               </h4>
               <ul className="list-group mb-3">
                 <li className="list-group-item d-flex justify-content-between lh-sm">
@@ -231,7 +231,6 @@ const Cart = () => {
                       name="paymentMethod"
                       type="radio"
                       className="form-check-input"
-                      defaultChecked
                       required
                     />
                     <label className="form-check-label" htmlFor="credit">
