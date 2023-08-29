@@ -4,26 +4,24 @@
 }
 
 .navBar {
-  display: flex;
-  justify-content: space-evenly;
-
   margin: 0;
   padding: 1rem;
-
+  display: flex;
+  justify-content: space-evenly;
   background-color: #212529;
-}
 
-.navBar li {
-  list-style-type: none;
+  li {
+    list-style-type: none;
+  }
 }
 
 .navLink {
   text-decoration: none;
   color: rgb(255, 255, 255, 0.75);
-}
 
-.navLink:hover {
-  color: white;
+  &:hover {
+    color: white;
+  }
 }
 
 .homePage {
@@ -34,17 +32,17 @@
 
   background-color: #f8f9fa;
   padding: 3rem;
-}
 
-.homePage h1 {
-  font-size: 2.5rem;
-  font-weight: bolder;
+  h1 {
+    font-size: 2.5rem;
+    font-weight: bolder;
 
-  margin: 1rem;
-}
+    margin: 1rem;
+  }
 
-.homePage h3 {
-  margin: 1rem;
+  h3 {
+    margin: 1rem;
+  }
 }
 
 .featured {

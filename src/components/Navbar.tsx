@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
+import { navItems } from "../data/Data";
 
 function Navbar() {
-  const navItems = ["Home", "Shop", "About", "Cart", "Login"];
-
   return (
     <>
       <ul className="navBar">

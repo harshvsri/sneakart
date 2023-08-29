@@ -17,7 +17,7 @@ function Cart({ cartItems }: Props) {
     <>
       <div className="container">
         <main className="my-5">
-          <div className="row g-5 mb-5">
+          <div className="row g-4 mb-5">
             {/* Cart */}
 
             <div className="col-md-5 col-lg-4 order-md-last">
