@@ -4,7 +4,7 @@ import { navItems } from "../data/Data";
 function Navbar() {
   return (
     <>
-      <ul className="navBar">
+      <ul className="navBar navbar sticky-top">
         {navItems.map((item, index) => (
           <li key={index}>
             <Link

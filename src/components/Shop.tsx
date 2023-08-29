@@ -23,9 +23,8 @@ function Shop({ handleAddToCart }: Props) {
                   <h5 className="card-title">{item.name}</h5>
                   <h6>{item.price}$</h6>
                   <p className="card-text">
-                    Unrivaled style, performance, and basketball heritage.
-                    Elevate your game and make a statement on and off the court
-                    with Nike Air Jordans.
+                    Unrivaled style, performance. Elevate your game and make a
+                    statement on and off the court.
                   </p>
                   <AddToCart item={item} handleAddToCart={handleAddToCart} />
                 </div>
