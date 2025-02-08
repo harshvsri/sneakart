@@ -1,6 +1,6 @@
-# ShoeKart
+# Sneakart
 
-Shoekart is an online shoe store that offers a wide selection of stylish and comfortable footwear for all occasions. Whether you're looking for sneakers, sandals, boots, or dress shoes, Shoekart has got you covered. With our user-friendly interface, seamless checkout process, and secure payment options, shopping for shoes has never been easier. Browse our extensive collection, find your perfect pair, and step into style with Shoekart.
+An online shoe store that offers a wide selection of stylish and comfortable footwear for all occasions. Whether you're looking for sneakers, sandals, boots, or dress shoes, Shoekart has got you covered. With our user-friendly interface, seamless checkout process, and secure payment options, shopping for shoes has never been easier. Browse our extensive collection, find your perfect pair, and step into style with Shoekart.
 
 ## Features
 
@@ -14,13 +14,13 @@ Shoekart is an online shoe store that offers a wide selection of stylish and com
 
 ## Installation
 
-1. Clone the repository: `git clone https://github.com/your-username/shoekart.git`
+1. Clone the repository: `git clone https://github.com/your-username/sneakart.git`
 2. Install the required dependencies: `npm install`
 3. Start the development server: `npm run dev`
 
 ## Contributing
 
-Contributions are welcome! If you'd like to contribute to Shoekart, please follow these steps:
+Contributions are welcome! If you'd like to contribute to Sneakart, please follow these steps:
 
 1. Fork the repository
 2. Create a new branch: `git checkout -b my-feature-branch`
